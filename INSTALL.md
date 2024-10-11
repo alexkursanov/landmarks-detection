@@ -31,9 +31,9 @@ sudo apt update
 sudo apt install python3
 ```
 
-## Установка VSCode
+## Установка VS Code
 
-Нужно скачать и установить VSCode https://code.visualstudio.com/. В этой IDE удобно работать с кодом и блокнотами.
+Нужно скачать и установить VS Code https://code.visualstudio.com/. В этой IDE удобно работать с кодом и блокнотами.
 
 ## Установка и настройка Git
 Проверить установлен ли Git можно командой в терминале
@@ -59,14 +59,19 @@ git config --global user.email johndoe@example.com
 git config --list
 ```
 ## Загрузка проекта из репозитория на Github
-Используя командную строку или терминал, создайте пустую папку с именем «projects», перейдите в нее и откройте VS Code (`code`) в этой папке (`.`), введя следующие команды:
+Используя командную строку или терминал, создайте пустую папку с именем «projects» (название может быть любым), перейдите в нее:
 ```
 mkdir projects
 cd projects
+```
+Скопируйте этот репозиторий в созданную папку:
+```
+git clone https://github.com/alexkursanov/landmarks-detection.git
+```
+В папке `projects` должна появиться папка с проектом `landmarks-detection`.
+Перейдите в нее и откройте VS Code (`code`) в этой папке (`.`), введя следующие команды:
+```
+cd landmarks-detection
 code .
 ```
-
-
-
-
-
+Вся остальная работа проходит уже в VS Code.
